@@ -1,0 +1,6 @@
+# Project exclude paths
+/.gradle/
+/tax-report/build/
+/tax-report/build/classes/java/main/
+/useless-box/build/
+/useless-box/build/classes/java/main/
