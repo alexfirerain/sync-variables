@@ -1,7 +1,7 @@
 import static java.lang.Thread.interrupted;
 
 public class Toy implements Runnable {
-    private Box box;
+    private final Box box;
 
     public Toy(Box box) {
         this.box = box;

@@ -22,7 +22,9 @@ public class Main {
                     () -> Arrays.stream(s.getRevenues())
                             .forEach(total::add));
 
-        collector.awaitTermination(3, TimeUnit.SECONDS);
+        System.out.println(
+                collector.awaitTermination(3, TimeUnit.SECONDS) ?
+                "потоки завершились" : "выключено по таймауту");
 
         Long totalSum = total.sum();
         System.out.printf("Общая выручка за этот день (%d магазина): %d коп. (%.2f₱)",
